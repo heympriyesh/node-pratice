@@ -6,8 +6,8 @@ require('dotenv/config')
 
 const url = process.env.DB_CONNECTION;
 
-//Import Routes
 app.use(bodyParser.json())
+//Import Routes
 const postRoute=require('./routes/posts');
 app.use('/posts',postRoute);
 //ROUTES
